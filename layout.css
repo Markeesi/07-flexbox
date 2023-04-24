@@ -1,0 +1,51 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 1rem;
+}
+h1 {
+  font-size: 2.4rem;
+  margin-block-end: 1rem;
+}
+p {
+  padding: 1rem;
+  font-size: 1.6rem;
+  margin-block-end: 1rem;
+}
+
+.color-red {
+  background-color: red;
+}
+.color-blue {
+  background-color: blue;
+}
+.color-green {
+  background-color: green;
+}
+/* Kappaleet viereikkäin flexin avulla*/
+.parent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.parent > * {
+  flex-basis: 0;
+  flex-grow: 1;
+  order: 2;
+}
+.parent h1 {
+  flex-basis: 100%;
+  order: 1;
+}
+/* sininen kappali tuplaleveyteen toimii kyllä kaikissa */
+.double {
+  flex-grow: 2;
+}
+/* vihreä kappale ekaksi*/
+
+.parent .firstOrder {
+  order: 1;
+}
